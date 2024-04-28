@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eventim.ExpensesAPI.props" />
+</Project>

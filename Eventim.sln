@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0B9F3AF9-C23D-4268-9D5B-4E9A14C912A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{3E591A1F-E7FD-4A1D-93E2-FCFA616B0E49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventim.ExpensesAPI", "Eventim.ExpensesAPI\Eventim.ExpensesAPI.csproj", "{54AB5A9C-0167-4122-819E-8651AFDD6F69}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Eventim.Frontend", "Eventim.Frontend\Eventim.Frontend.esproj", "{7112A56B-B477-4370-9862-C518F6F1994F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AB5A9C-0167-4122-819E-8651AFDD6F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AB5A9C-0167-4122-819E-8651AFDD6F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AB5A9C-0167-4122-819E-8651AFDD6F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AB5A9C-0167-4122-819E-8651AFDD6F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7112A56B-B477-4370-9862-C518F6F1994F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54AB5A9C-0167-4122-819E-8651AFDD6F69} = {0B9F3AF9-C23D-4268-9D5B-4E9A14C912A4}
+		{7112A56B-B477-4370-9862-C518F6F1994F} = {3E591A1F-E7FD-4A1D-93E2-FCFA616B0E49}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A07284-F2DB-41B0-A34A-6BEB47CF63AF}
+	EndGlobalSection
+EndGlobal
