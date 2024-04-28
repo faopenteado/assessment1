@@ -9,7 +9,21 @@ namespace Eventim.Expenses.Model.Context
     {
         public SqlContext() { }
 
-        public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
+        private readonly IConfiguration _config;
+
+        public SqlContext(DbContextOptions<SqlContext> options, IConfiguration config) : base(options) 
+        {
+            _config = config;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (EF.IsDesignTime)
+            {
+                optionsBuilder.UseSqlServer(_config.GetConnectionString("DefaultConnection"), opt => opt.CommandTimeout(600));
+            }
+            base.OnConfiguring(optionsBuilder);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

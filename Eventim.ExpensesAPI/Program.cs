@@ -5,6 +5,7 @@ using Eventim.ExpensesAPI.Repository;
 using Eventim.ExpensesAPI.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System;
 
