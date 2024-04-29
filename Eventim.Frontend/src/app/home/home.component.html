@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <button
+      type="button"
+      class="btn"
+      routerLink="/add-group"
+      routerLinkActive="active"
+    >
+      Add group
+    </button>
+  </div>
+
+  <h2>Group of expenses</h2>
+  <div class="row" *ngIf="groups.length > 0">
+    <ul>
+      <app-grouplist
+        *ngFor="let group of groups"
+        [group]="group"
+      ></app-grouplist>
+    </ul>
+  </div>
+  <div class="row" *ngIf="groups.length == 0">
+    <span class="label mt-25"
+      >It seems there are any groups created. Create a group!</span
+    >
+  </div>
+</div>

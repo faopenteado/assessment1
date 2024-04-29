@@ -1,0 +1,17 @@
+li {
+  height: 35px;
+  font-size: 1.3em;
+  color: rgb(5, 5, 5) !important;
+  text-decoration: none;
+  border: 1px solid #aaa;
+  width: 350px;
+  margin: 2px;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(5, 5, 5) !important;
+  text-decoration: none;
+}

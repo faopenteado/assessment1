@@ -1,0 +1,10 @@
+<li>
+  <span class="label">
+    <b>{{ expense.peopleName }}:</b> {{ expense.amount }} € -
+    {{ expense.description }}
+  </span>
+  <br />
+  <span class="time">
+    {{ calculateDiff(expense.date) }}
+  </span>
+</li>

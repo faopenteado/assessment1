@@ -1,0 +1,28 @@
+<div class="container" [formGroup]="expenseForm">
+  <div class="row">
+    <h3 class="mt-15">Add new people</h3>
+  </div>
+  <div class="row mb-15 mt-15">
+    <span class="label">Person: </span>
+
+    <select formControlName="expensesGroupPeopleId" class="dropdownlist">
+      <option value="-">-</option>
+      <option *ngFor="let person of people" value="{{ person.id }}">
+        {{ person.name }}
+      </option>
+    </select>
+  </div>
+  <div class="row mb-15 mt-15">
+    <span class="label">Description: </span>
+    <input type="text" class="text-box" formControlName="description" />
+  </div>
+  <div class="row mb-15 mt-15">
+    <span class="label">Amount: </span>
+    <input type="number" class="text-box" formControlName="amount" />
+  </div>
+
+  <div class="row">
+    <button class="btn gap-1" (click)="save()">Save</button>
+    <button class="btn btn-cancel gap-1" (click)="onCancel()">Cancel</button>
+  </div>
+</div>

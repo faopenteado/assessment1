@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h3>Balance</h3>
+  </div>
+  <div class="row mt-15">
+    <span class="label"
+      >Total spent: {{ balance.total | number : ".2-2" }} €</span
+    >
+  </div>
+
+  <ul>
+    <li *ngFor="let b of balance.expensesBalance">
+      <span class="label">{{ b.personName }}: </span>
+      <span class="label" [ngClass]="b.amount >= 0 ? 'green' : 'red'">
+        {{ b.amount | number : ".2-2" }} €
+      </span>
+    </li>
+  </ul>
+</div>
